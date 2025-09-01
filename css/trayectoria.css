@@ -1,0 +1,372 @@
+@font-face {
+    font-family: 'Blacklisted';
+    src: url('../fonts/Blacklisted.ttf') format('truetype');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #000000;
+    background-image: url('/img/Logo.jpg');
+    background-size: 95%;
+    background-repeat: repeat-y;
+    background-position: center top;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(rgba(255, 255, 255, 0.296), transparent);
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0%;
+    z-index: 1000;
+}
+
+.logo-container {
+    position: absolute;
+}
+
+.logo {
+    width: 110px;
+    height: auto;
+}
+
+.name-container {
+    position: relative;
+    margin-left: 90px;
+    bottom: 20px;
+}
+
+.name-image {
+    margin-top: 35px;
+    width: 500px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.name-container:hover .name-image {
+    transform: scale(1.1);
+}
+
+nav {
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Blacklisted', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+nav ul li a:hover {
+    transform: scale(1.2);
+}
+
+.info-container {
+    position: relative;
+    width: 100%;
+    color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 120px auto 200px;
+    background-color: rgba(0, 0, 0, 0.348);
+}
+
+.info-container h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.info-container p {
+    font-size: 35px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.integrantes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+    font-family: 'Blacklisted';
+}
+
+.integrante {
+    flex: 0 0 45%;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.integrante p {
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.integrante img {
+    height: 400px;
+    border-radius: 10px;
+}
+
+.medios-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.medios-container a {
+    text-align: center;
+}
+
+.medios-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.medios-container img:hover {
+    transform: scale(1.1);
+}
+
+.social-media {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.4);
+}
+
+.platforms-container {
+    position: fixed;
+    bottom: 15px;
+    left: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.platforms-title {
+    font-family: 'Blacklisted', sans-serif;
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.727);
+    border-radius: 20px;
+}
+
+.platforms-image {
+    max-width: 150px;
+    height: auto;
+}
+
+footer {
+    font-family: 'Blacklisted', sans-serif;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        background-color: #000000;
+        align-items: center;
+        height: 40px;
+        width: 100%;
+        top: 0;
+        left: 0%;
+        z-index: 1000;
+    }
+
+    .logo-container {
+        position: absolute;
+    }
+
+    .logo {
+        width: 40px;
+        height: auto;
+    }
+
+    .name-container {
+        position: relative;
+        margin-left: 25px;
+        bottom: 20px;
+    }
+
+    .name-image {
+        margin-top: 35px;
+        width: 100px;
+        height: auto;
+        transition: transform 0.3s;
+    }
+
+    .name-container:hover .name-image {
+        transform: scale(1.1);
+    }
+
+    nav {
+        margin-left: 10px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Blacklisted', sans-serif;
+        font-weight: bold;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        transition: transform 0.3s;
+    }
+
+    nav ul li a:hover {
+        transform: scale(1.2);
+    }
+
+    .info-container {
+        position: relative;
+        width: 100%;
+        color: #fff;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin: 120px auto 200px;
+        background-color: rgba(0, 0, 0, 0.348);
+    }
+
+    .info-container h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .info-container p {
+        font-size: 15px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    .integrante img {
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    .medios-container img {
+        width: 100px;
+        height: auto;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    .social-media {
+        position: fixed;
+        bottom: 20px;
+        right: 0px;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .social-media a {
+        margin: 0 10px;
+    }
+
+    .social-media img {
+        width: 20px;
+        height: auto;
+        transition: transform 0.3s;
+    }
+
+    .social-media img:hover {
+        transform: scale(1.4);
+    }
+
+    .platforms-container {
+        position: fixed;
+        bottom: 15px;
+        left: 0px;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .platforms-title {
+        font-family: 'Blacklisted', sans-serif;
+        font-size: 10px;
+        margin-bottom: 0px;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.727);
+        border-radius: 20px;
+    }
+
+    .platforms-image {
+        max-width: 70px;
+        height: auto;
+    }
+
+    footer {
+        font-family: 'Blacklisted', sans-serif;
+        text-align: center;
+        font-size: 10px;
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        color: #fff;
+    }
+
+}
